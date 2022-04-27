@@ -119,7 +119,7 @@ $autoload['packages'] = array();
 */
 
 // oitocredis
-$autoload['libraries'] = array('database','email','form_validation','session','linker','day_indo','count','files', 'user_agent');
+$autoload['libraries'] = array('database', 'email', 'form_validation', 'session');
 
 /*
 
@@ -264,5 +264,4 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 
 */
-
-$autoload['model'] = array('manual_m', 'staf_m', 'notifikasi_staf_m', 'notifikasi_m');
+$autoload['model'] = array();

@@ -1,6 +1,6 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 
 
@@ -158,7 +158,7 @@ $db['default'] = array(
 
 	'password' => '',
 
-	'database' => 'alphatech_lms_sma',
+	'database' => 'lms_sd_manager',
 
 	'dbdriver' => 'mysqli',
 
@@ -190,3 +190,27 @@ $db['default'] = array(
 
 );
 
+// Konfigurasi database kedua
+if (isset($_SESSION['lms_sd_manager_server'])) {
+	$db['db_sekolah'] = array(
+		'dsn'      => '',
+		'hostname' => 'localhost',
+		'username' => 'root',
+		'password' => '',
+		'database' => $_SESSION['lms_sd_manager_server'],
+		'dbdriver' => 'mysqli',
+		'dbprefix' => '',
+		'pconnect' => FALSE,
+		'db_debug' => (ENVIRONMENT !== 'production'),
+		'cache_on' => FALSE,
+		'cachedir' => '',
+		'char_set' => 'utf8',
+		'dbcollat' => 'utf8_general_ci',
+		'swap_pre' => '',
+		'encrypt'  => FALSE,
+		'compress' => FALSE,
+		'stricton' => FALSE,
+		'failover' => array(),
+		'save_queries' => TRUE
+	);
+}
