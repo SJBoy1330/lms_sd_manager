@@ -27,3 +27,7 @@ ERROR - 2022-04-27 22:31:32 --> Severity: Warning --> include(): Failed opening 
 ERROR - 2022-04-27 22:02:32 --> 404 Page Not Found: /index
 ERROR - 2022-04-27 22:02:51 --> 404 Page Not Found: /index
 >>>>>>> Stashed changes
+ERROR - 2022-04-27 22:33:02 --> Severity: Warning --> include(header): failed to open stream: No such file or directory C:\xampp\htdocs\lms_sd\lms_sd_manager\themes\main_frontend\layout_single.php 19
+ERROR - 2022-04-27 22:33:02 --> Severity: Warning --> include(): Failed opening 'header' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\lms_sd\lms_sd_manager\themes\main_frontend\layout_single.php 19
+ERROR - 2022-04-27 23:02:05 --> Severity: Warning --> include(header): failed to open stream: No such file or directory C:\xampp\htdocs\lms_sd\lms_sd_manager\themes\main_frontend\layout_single.php 19
+ERROR - 2022-04-27 23:02:05 --> Severity: Warning --> include(): Failed opening 'header' for inclusion (include_path='C:\xampp\php\PEAR') C:\xampp\htdocs\lms_sd\lms_sd_manager\themes\main_frontend\layout_single.php 19
