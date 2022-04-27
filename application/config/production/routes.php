@@ -108,6 +108,29 @@ $route['dashboard/(:any)'] = 'dashboard/controller_ctl/$1';
 $route['dashboard/(:any)/(:any)'] = 'dashboard/controller_ctl/$1/$2';
 
 
+$route['sekolah'] = 'sekolah/controller_ctl';
+$route['sekolah/(:any)'] = 'sekolah/controller_ctl/$1';
+$route['sekolah/(:any)/(:any)'] = 'sekolah/controller_ctl/$1/$2';
+
+
+$route['user'] = 'user/controller_ctl';
+$route['user/(:any)'] = 'user/controller_ctl/$1';
+$route['user/(:any)/(:any)'] = 'user/controller_ctl/$1/$2';
+
+
+$route['staf'] = 'staf/controller_ctl';
+$route['staf/(:any)'] = 'staf/controller_ctl/$1';
+$route['staf/(:any)/(:any)'] = 'staf/controller_ctl/$1/$2';
+
+
+$route['bantuan'] = 'bantuan/controller_ctl';
+$route['bantuan/(:any)'] = 'bantuan/controller_ctl/$1';
+$route['bantuan/(:any)/(:any)'] = 'bantuan/controller_ctl/$1/$2';
+
+$route['pembayaran'] = 'pembayaran/controller_ctl';
+$route['pembayaran/(:any)'] = 'pembayaran/controller_ctl/$1';
+$route['pembayaran/(:any)/(:any)'] = 'pembayaran/controller_ctl/$1/$2';
+
 
 $route['404_override'] = '';
 

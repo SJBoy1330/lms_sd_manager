@@ -43,6 +43,11 @@
 <script src="<?= base_url(); ?>assets/js/custom/modals/create-campaign.js"></script>
 <script src="<?= base_url(); ?>assets/js/custom/modals/users-search.js"></script>
 <!--end::Page Custom Javascript-->
+
+<!-- Daterangepicker -->
+<!-- <script type="text/javascript" src="<?= base_url(); ?>assets/plugins/daterangepicker/js/moment.min.js"></script>
+<script type="text/javascript" src="<?= base_url(); ?>assets/plugins/daterangepicker/js/daterangepicker.js"></script> -->
+
 <!--end::Javascript-->
 </body>
 <!--end::Body-->

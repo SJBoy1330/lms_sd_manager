@@ -4,7 +4,7 @@
         <!--begin::Header-->
         <div class="card-header border-0 pt-5">
             <h3 class="card-title align-items-start flex-column">
-                <span class="card-label fw-bolder fs-3 mb-1">Tahun Ajaran</span>
+                <span class="card-label fw-bolder fs-3 mb-1">Metode Bayar</span>
                 <!-- <span class="text-muted mt-1 fw-bold fs-7">Over 500 new products</span> -->
             </h3>
             <div class="card-toolbar">
@@ -16,7 +16,7 @@
                         <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black" />
                     </svg>
                 </span>
-                Tahun Ajaran</a>
+                Metode Bayar</a>
             </div>
         </div>
         <!--end::Header-->
@@ -30,8 +30,12 @@
                     <thead>
                         <tr class="fw-bolder text-muted bg-light">
                             <th class="ps-4 min-w-50px rounded-start">No</th>
+                            <th class="min-w-200 text-center">Sekolah</th>
                             <th class="min-w-200 text-center">Nama</th>
-                            <th class="min-w-200 text-center">Masa Aktif</th>
+                            <th class="min-w-200 text-center">Biaya</th>
+                            <th class="min-w-200 text-center">Biaya (%)</th>
+                            <th class="min-w-200 text-center">Keterangan</th>
+                            <th class="min-w-200 text-center">Status</th>
                             <th class="pe-4 min-w-50px text-end rounded-end"> Aksi</th>
                         </tr>
                     </thead>
@@ -43,13 +47,25 @@
                                 1
                             </td>
                             <td class="fw-bolder text-center">
-                                2020/2021
+                                ALPHATECH SCHOOL
                             </td>
                             <td class="fw-bolder text-center">
-                                2020-07-12 s/d 2021-07-11
+                                ALPHATECH
+                            </td>
+                            <td class="fw-bolder text-center">
+                                0
+                            </td>
+                            <td class="fw-bolder text-center">
+                                0
+                            </td>
+                            <td class="fw-bolder text-center">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </td>
+                            <td class="fw-bolder text-center">
+                                Aktif
                             </td>
                             <td class="text-end">
-                                <a href="#" class="btn btn-icon btn-bg-light btn-active-color-warning btn-sm me-1">
+                                <a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
                                     <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
                                     <span class="svg-icon svg-icon-3">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -91,7 +107,7 @@
             <!--begin::Modal header-->
             <div class="modal-header">
                 <!--begin::Modal title-->
-                <h2 class="fw-bolder">Tambah Tahun Ajaran</h2>
+                <h2 class="fw-bolder">Tambah Metode Bayar</h2>
                 <!--end::Modal title-->
                 <!--begin::Close-->
                 <div class="btn btn-icon btn-sm btn-active-icon-primary" data-bs-dismiss="modal" data-kt-users-modal-action="close" type="button">
@@ -110,24 +126,109 @@
             <!--begin::Modal body-->
             <div class="modal-body scroll-y mx-5 mx-xl-8 mb-7">
                 <!--begin::Form-->
-                <form id="kt_modal_export_users_form" class="form" action="#">
+                <form class="form" action="#">
                     <!--begin::Input group-->
                     <div class="fv-row mb-10">
                         <!--begin::Label-->
-                        <label class="fs-6 fw-bold form-label mb-2">Nama</label>
+                        <label class="fs-6 fw-bold form-label mb-2">Sekolah</label>
                         <!--end::Label-->
                         <div class="position-relative d-flex align-items-center">
-                            <input class="form-control form-control-solid" name="tanggal" placeholder="Masukkan Nama" />
+                            <select class="form-select form-select-solid" data-control="select2" data-placeholder="Pilih sekolah">
+                                <option></option>
+                                <option value="1">SMA 1</option>
+                                <option value="2">SMA 2</option>
+                            </select>
                         </div>
                     </div>
                     <!--end::Input group-->
                     <!--begin::Input group-->
                     <div class="fv-row mb-10">
                         <!--begin::Label-->
-                        <label class="required fs-6 fw-bold form-label mb-2">Masa Aktif</label>
+                        <label class="fs-6 fw-bold form-label mb-2">Nama</label>
                         <!--end::Label-->
-                        <<div class="position-relative d-flex align-items-center">
-                            <input class="form-control form-control-solid" name="tanggal" placeholder="Tanggal" />
+                        <div class="position-relative d-flex align-items-center">
+                            <input class="form-control form-control-solid"  placeholder="Masukkan nama" />
+                        </div>
+                    </div>
+
+                    <div class="fv-row mb-10">
+                        <!--begin::Label-->
+                        <label class="fs-6 fw-bold form-label mb-2">Biaya</label>
+                        <!--end::Label-->
+                        <div class="position-relative d-flex align-items-center">
+                            <input type="number" class="form-control form-control-solid"  placeholder="Masukkan biaya" />
+                        </div>
+                    </div>
+                    <!--end::Input group-->
+                    <!--begin::Input group-->
+                    <div class="fv-row mb-10">
+                        <!--begin::Label-->
+                        <label class="fs-6 fw-bold form-label mb-2">Biaya Persen</label>
+                        <!--end::Label-->
+                        <div class="position-relative d-flex align-items-center">
+                            <input type="number" class="form-control form-control-solid"  placeholder="Masukkan biaya persen" />
+                        </div>
+                    </div>
+
+                    <div class="fv-row mb-10">
+                        <!--begin::Label-->
+                        <label class="fs-6 fw-bold form-label mb-2">No Rekening</label>
+                        <!--end::Label-->
+                        <div class="position-relative d-flex align-items-center">
+                            <input class="form-control form-control-solid"  placeholder="Masukkan no rekening" />
+                        </div>
+                    </div>
+                    
+                    <div class="fv-row mb-10">
+                        <!--begin::Label-->
+                        <label class="fs-6 fw-bold form-label mb-2">Cabang</label>
+                        <!--end::Label-->
+                        <div class="position-relative d-flex align-items-center">
+                            <input class="form-control form-control-solid"  placeholder="Masukkan email" />
+                        </div>
+                    </div>
+
+                    <div class="fv-row mb-10">
+                        <!--begin::Label-->
+                        <label class="fs-6 fw-bold form-label mb-2">Atas Nama</label>
+                        <!--end::Label-->
+                        <div class="position-relative d-flex align-items-center">
+                            <input class="form-control form-control-solid"  placeholder="Masukkan telpon" />
+                        </div>
+                    </div>
+
+                    <div class="fv-row mb-10">
+                        <!--begin::Label-->
+                        <label class="fs-6 fw-bold form-label mb-2">Channel</label>
+                        <!--end::Label-->
+                        <div class="position-relative d-flex align-items-center">
+                            <select class="form-select form-select-solid" data-control="select2" data-placeholder="Pilih">
+                                <option></option>
+                                <option value="1">Sekolah</option>
+                                <option value="2">Admin</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="fv-row mb-10">
+                        <!--begin::Label-->
+                        <label class="fs-6 fw-bold form-label mb-2">Keterangan</label>
+                        <!--end::Label-->
+                        <div class="position-relative d-flex align-items-center">
+                            <textarea class="form-control form-control-solid" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="fv-row mb-10">
+                        <!--begin::Label-->
+                        <label class="fs-6 fw-bold form-label mb-2">Aktif</label>
+                        <!--end::Label-->
+                        <div class="position-relative d-flex align-items-center">
+                            <select class="form-select form-select-solid" data-control="select2" data-placeholder="Pilih    ">
+                                <option></option>
+                                <option value="1">Ya</option>
+                                <option value="2">Tidak</option>
+                            </select>
                         </div>
                     </div>
                     <!--end::Input group-->
