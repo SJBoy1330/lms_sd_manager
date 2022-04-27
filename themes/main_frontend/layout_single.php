@@ -7,13 +7,10 @@ echo alert_show($this->session->flashdata('judul'), $this->session->flashdata('m
 ?>
 
 <?php echo $content; ?>
-
+<?php
 
 echo alert_show($this->session->flashdata('judul'), $this->session->flashdata('message'), $this->session->flashdata('icon'), $this->session->flashdata('image'));
 
 ?>
 
 <?php include_once("footer.php"); ?>
-<?php
-
-include 'header';
