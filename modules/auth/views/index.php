@@ -76,11 +76,11 @@
                         <!--begin::Actions-->
                         <div class="text-center">
                             <!--begin::Submit button-->
-                            <button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5">
+                            <a href="<?= base_url('dashboard') ?>" class="btn btn-lg btn-primary w-100 mb-5">
                                 <span class="indicator-label">Masuk</span>
                                 <span class="indicator-progress">Please wait...
                                     <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                            </button>
+                            </a>
                             <!--end::Submit button-->
                         </div>
                         <!--end::Actions-->
