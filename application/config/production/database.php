@@ -152,13 +152,13 @@ $db['default'] = array(
 
 	'dsn'	=> '',
 
-	'hostname' => 'localhost',
+	'hostname' => '103.176.79.180',
 
-	'username' => 'root',
+	'username' => 'klasqid_sd_dev',
 
-	'password' => '',
+	'password' => '&S1&xX5vs%k0',
 
-	'database' => 'lms_sd_manager',
+	'database' => 'klasqid_sd_manager_dev',
 
 	'dbdriver' => 'mysqli',
 

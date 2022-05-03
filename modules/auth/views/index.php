@@ -36,7 +36,7 @@
                 <!--begin::Wrapper-->
                 <div class="w-lg-500px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
                     <!--begin::Form-->
-                    <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" action="#">
+                    <form class="form w-100" novalidate="novalidate" method="POST" action="<?= base_url('auth/func_login') ?>" id="login_form">
                         <!--begin::Heading-->
                         <div class="text-center mb-10">
                             <!--begin::Title-->
@@ -76,11 +76,9 @@
                         <!--begin::Actions-->
                         <div class="text-center">
                             <!--begin::Submit button-->
-                            <a href="<?= base_url('dashboard') ?>" class="btn btn-lg btn-primary w-100 mb-5">
+                            <button type="submit" id="button_submit" class="btn btn-lg btn-primary w-100 mb-5">
                                 <span class="indicator-label">Masuk</span>
-                                <span class="indicator-progress">Please wait...
-                                    <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                            </a>
+                            </button>
                             <!--end::Submit button-->
                         </div>
                         <!--end::Actions-->
@@ -90,17 +88,6 @@
                 <!--end::Wrapper-->
             </div>
             <!--end::Content-->
-            <!--begin::Footer-->
-            <div class="d-flex flex-center flex-column-auto p-10">
-                <!--begin::Links-->
-                <div class="d-flex align-items-center fw-bold fs-6">
-                    <a href="https://keenthemes.com" class="text-muted text-hover-primary px-2">About</a>
-                    <a href="mailto:support@keenthemes.com" class="text-muted text-hover-primary px-2">Contact</a>
-                    <a href="https://1.envato.market/EA4JP" class="text-muted text-hover-primary px-2">Contact Us</a>
-                </div>
-                <!--end::Links-->
-            </div>
-            <!--end::Footer-->
         </div>
         <!--end::Authentication - Sign-in-->
     </div>
@@ -109,10 +96,13 @@
     <!--begin::Javascript-->
     <script>
         var hostUrl = "<?= base_url(); ?>assets/";
+        var BASE_URL = baseUrl = '<?= base_url(); ?>';
     </script>
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="<?= base_url(); ?>assets/plugins/global/plugins.bundle.js"></script>
     <script src="<?= base_url(); ?>assets/js/scripts.bundle.js"></script>
+
+    <script src="<?= base_url(); ?>assets/js/page/login.js"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Page Custom Javascript(used by this page)-->
     <script src="<?= base_url(); ?>assets/js/custom/authentication/sign-in/general.js"></script>

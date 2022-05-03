@@ -369,9 +369,36 @@ function mydate($date, $format)
   return $date_format;
 }
 
-function get_id_sekolah($kode)
+function hash_my_password($password)
 {
-  $ci = &get_instance();
-  $result = $ci->db->get_where('sekolah', ['kode' => $kode])->row();
-  return $result->id_sekolah;
+  $data = hash('sha256', $password);
+  return $data;
+}
+
+function deklarasi($arrVar, $null_akses = false)
+{
+  $ci = get_instance();
+
+  foreach ($arrVar as $var) {
+    $post[$var] = $$value = $ci->input->post($var);
+  }
+  return $post;
+}
+
+function deklarasi_double($arrVar)
+{
+  $ci = get_instance();
+
+  foreach ($arrVar as $var => $value) {
+    $post['variabel'][$var] = $$var = $ci->input->post($var);
+    if (!$$var) {
+      $post['comment']['required'][] = ['req_' . $var, $value . ' tidak boleh kosong !'];
+      $post['arrAccess'][] = false;
+    } else {
+      $post['arrAccess'][] = true;
+    }
+  }
+
+
+  return $post;
 }

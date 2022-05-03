@@ -24,7 +24,7 @@
 
     <!--end::Global Stylesheets Bundle-->
     <script src="https://kit.fontawesome.com/3e89801c3a.js" crossorigin="anonymous"></script>
-    
+
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -79,8 +79,8 @@
                                 <div class="mb-10">
                                     <!--begin::Tabs-->
                                     <ul class="nav row mb-10">
-                                    <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('pembayaran')?>">
+                                        <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('pembayaran') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-money-check-pen mt-7 mb-5" style="font-size: 32px;"></i>
@@ -90,7 +90,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('user')?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('user') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-users mt-7 mb-5" style="font-size: 32px;"></i>
@@ -99,18 +99,9 @@
                                                 <span class="fs-6 fw-bold">Pengguna</span>
                                             </a>
                                         </li>
+
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('sekolah')?>">
-                                                <!--begin::Svg Icon | path: icons/duotune/general/gen008.svg-->
-                                                <span class="svg-icon svg-icon-3x mb-5 mx-0">
-                                                    <i class="fa-duotone fa-school mt-7 mb-5" style="font-size: 32px;"></i>
-                                                </span>
-                                                <!--end::Svg Icon-->
-                                                <span class="fs-6 fw-bold">Sekolah</span>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px active"  href="<?= base_url('dashboard')?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('dashboard') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-calendar-circle-user mt-7 mb-5" style="font-size: 32px;"></i>
@@ -120,7 +111,17 @@
                                             </a>
                                         </li>
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('staf')?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px active" href="<?= base_url('sekolah') ?>">
+                                                <!--begin::Svg Icon | path: icons/duotune/general/gen008.svg-->
+                                                <span class="svg-icon svg-icon-3x mb-5 mx-0">
+                                                    <i class="fa-duotone fa-school mt-7 mb-5" style="font-size: 32px;"></i>
+                                                </span>
+                                                <!--end::Svg Icon-->
+                                                <span class="fs-6 fw-bold">Sekolah</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('staf') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen032.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-chalkboard-user mt-7 mb-5" style="font-size: 32px;"></i>
@@ -130,7 +131,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('bantuan')?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('bantuan') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen048.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-circle-question mt-7 mb-5" style="font-size: 32px;"></i>
@@ -140,7 +141,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('bantuan/kategori_bantuan')?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('bantuan/kategori_bantuan') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen048.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-circle-question mt-7 mb-5" style="font-size: 32px;"></i>

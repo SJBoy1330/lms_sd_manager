@@ -102,34 +102,48 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 $route['default_controller'] = 'auth/controller_ctl';
 
+$route['auth'] = 'auth/controller_ctl';
+$route['auth/(:any)'] = 'auth/controller_ctl/$1';
+$route['auth/(:any)/(:any)'] = 'auth/controller_ctl/$1/$2';
 
-$route['dashboard'] = 'dashboard/controller_ctl';
-$route['dashboard/(:any)'] = 'dashboard/controller_ctl/$1';
-$route['dashboard/(:any)/(:any)'] = 'dashboard/controller_ctl/$1/$2';
+$route['dashboard'] = 'gate/controller_ctl';
+$route['dashboard/(:any)'] = 'gate/controller_ctl/$1';
+$route['dashboard/(:any)/(:any)'] = 'gate/controller_ctl/$1/$2';
 
-
-$route['sekolah'] = 'sekolah/controller_ctl';
-$route['sekolah/(:any)'] = 'sekolah/controller_ctl/$1';
-$route['sekolah/(:any)/(:any)'] = 'sekolah/controller_ctl/$1/$2';
-
-
-$route['user'] = 'user/controller_ctl';
-$route['user/(:any)'] = 'user/controller_ctl/$1';
-$route['user/(:any)/(:any)'] = 'user/controller_ctl/$1/$2';
+$route['gate'] = 'gate/controller_ctl';
+$route['gate/(:any)'] = 'gate/controller_ctl/$1';
+$route['gate/(:any)/(:any)'] = 'gate/controller_ctl/$1/$2';
 
 
-$route['staf'] = 'staf/controller_ctl';
-$route['staf/(:any)'] = 'staf/controller_ctl/$1';
-$route['staf/(:any)/(:any)'] = 'staf/controller_ctl/$1/$2';
+$route['sekolah'] = 'gate/controller_ctl';
+$route['sekolah/(:any)'] = 'gate/controller_ctl//$1';
+$route['sekolah/(:any)/(:any)'] = 'gate/controller_ctl//$1/$2';
 
 
-$route['bantuan'] = 'bantuan/controller_ctl';
-$route['bantuan/(:any)'] = 'bantuan/controller_ctl/$1';
-$route['bantuan/(:any)/(:any)'] = 'bantuan/controller_ctl/$1/$2';
+$route['user'] = 'gate/controller_ctl/user';
+$route['user/(:any)'] = 'gate/controller_ctl/user/$1';
+$route['user/(:any)/(:any)'] = 'gate/controller_ctl/user/$1/$2';
 
-$route['pembayaran'] = 'pembayaran/controller_ctl';
-$route['pembayaran/(:any)'] = 'pembayaran/controller_ctl/$1';
-$route['pembayaran/(:any)/(:any)'] = 'pembayaran/controller_ctl/$1/$2';
+
+$route['staf'] = 'gate/controller_ctl/staf';
+$route['staf/(:any)'] = 'gate/controller_ctl/staf/$1';
+$route['staf/(:any)/(:any)'] = 'gate/controller_ctl/staf/$1/$2';
+
+
+$route['bantuan'] = 'gate/controller_ctl/bantuan';
+$route['bantuan/(:any)'] = 'gate/controller_ctl/bantuan/$1';
+$route['bantuan/(:any)/(:any)'] = 'gate/controller_ctl/bantuan/$1/$2';
+
+
+$route['kategori_bantuan'] = 'gate/controller_ctl/kategori_bantuan';
+$route['kategori_bantuan/(:any)'] = 'gate/controller_ctl/kategori_bantuan/$1';
+$route['kategori_bantuan/(:any)/(:any)'] = 'gate/controller_ctl/kategori_bantuan/$1/$2';
+
+
+
+$route['pembayaran'] = 'gate/controller_ctl/pembayaran';
+$route['pembayaran/(:any)'] = 'gate/controller_ctl/pembayaran/$1';
+$route['pembayaran/(:any)/(:any)'] = 'gate/controller_ctl/pembayaran/$1/$2';
 
 
 $route['404_override'] = '';
