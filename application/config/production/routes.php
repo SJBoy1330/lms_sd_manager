@@ -135,6 +135,14 @@ $route['bantuan/(:any)'] = 'gate/controller_ctl/bantuan/$1';
 $route['bantuan/(:any)/(:any)'] = 'gate/controller_ctl/bantuan/$1/$2';
 
 
+
+
+
+$route['tahun_ajaran'] = 'gate/controller_ctl/tahun_ajaran';
+$route['tahun_ajaran/(:any)'] = 'gate/controller_ctl/tahun_ajaran/$1';
+$route['tahun_ajaran/(:any)/(:any)'] = 'gate/controller_ctl/tahun_ajaran/$1/$2';
+
+
 $route['kategori_bantuan'] = 'gate/controller_ctl/kategori_bantuan';
 $route['kategori_bantuan/(:any)'] = 'gate/controller_ctl/kategori_bantuan/$1';
 $route['kategori_bantuan/(:any)/(:any)'] = 'gate/controller_ctl/kategori_bantuan/$1/$2';
@@ -145,6 +153,21 @@ $route['pembayaran'] = 'gate/controller_ctl/pembayaran';
 $route['pembayaran/(:any)'] = 'gate/controller_ctl/pembayaran/$1';
 $route['pembayaran/(:any)/(:any)'] = 'gate/controller_ctl/pembayaran/$1/$2';
 
+
+
+
+$route['linker'] = 'linker/controller_ctl';
+$route['linker/(:any)'] = 'linker/controller_ctl/$1';
+$route['linker/(:any)/(:any)'] = 'linker/controller_ctl/$1/$2';
+$route['linker/(:any)/(:any)/(:any)'] = 'linker/controller_ctl/$1/$2/$3';
+$route['linker/(:any)/(:any)/(:any)/(:any)'] = 'linker/controller_ctl/$1/$2/$3/$4';
+$route['linker/(:any)/(:any)/(:any)/(:any)/(:any)'] = 'linker/controller_ctl/$1/$2/$3/$4/$5';
+
+
+
+$route['function'] = 'gate/function_ctl';
+$route['function/(:any)'] = 'gate/function_ctl/$1';
+$route['function/(:any)/(:any)'] = 'gate/function_ctl/$1/$2';
 
 $route['404_override'] = '';
 

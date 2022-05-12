@@ -3,7 +3,15 @@
 
 <head>
     <base href="">
-    <title>KlasQ</title>
+    <title>
+        <?php
+        if (isset($title)) {
+            echo 'KlasQ | ' . $title;
+        } else {
+            echo 'KlasQ';
+        }
+        ?>
+    </title>
     <meta charset="utf-8" />
     <meta name="description" content="The most advanced Bootstrap Admin Theme on Themeforest trusted by 94,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue &amp; Laravel versions. Grab your copy now and get life-time updates for free." />
     <meta name="keywords" content="Metronic, bootstrap, bootstrap 5, Angular, VueJs, React, Laravel, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
@@ -80,7 +88,7 @@
                                     <!--begin::Tabs-->
                                     <ul class="nav row mb-10">
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('pembayaran') ?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px <?= (set_active($this->uri->segment(1), 'pembayaran', $this->uri->segment(2), array())) ?>" href="<?= base_url('pembayaran') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-money-check-pen mt-7 mb-5" style="font-size: 32px;"></i>
@@ -90,7 +98,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('user') ?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px <?= (set_active($this->uri->segment(1), 'user', $this->uri->segment(2), array())) ?>" href="<?= base_url('user') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-users mt-7 mb-5" style="font-size: 32px;"></i>
@@ -101,7 +109,7 @@
                                         </li>
 
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('dashboard') ?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px  <?= (set_active($this->uri->segment(1), 'tahun_ajaran', $this->uri->segment(2), array())) ?>" href="<?= base_url('tahun_ajaran') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/finance/fin006.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-calendar-circle-user mt-7 mb-5" style="font-size: 32px;"></i>
@@ -111,7 +119,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px active" href="<?= base_url('sekolah') ?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px  <?= (set_active($this->uri->segment(1), 'dashboard', $this->uri->segment(2), array('dashboard', 'sekolah'))) ?> <?= (set_active($this->uri->segment(1), 'sekolah', $this->uri->segment(2), array('dashboard', 'sekolah'))) ?>" href="<?= base_url('sekolah') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen008.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-school mt-7 mb-5" style="font-size: 32px;"></i>
@@ -121,7 +129,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('staf') ?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px  <?= (set_active($this->uri->segment(1), 'staf', $this->uri->segment(2), array())) ?>" href="<?= base_url('staf') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen032.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-chalkboard-user mt-7 mb-5" style="font-size: 32px;"></i>
@@ -131,7 +139,7 @@
                                             </a>
                                         </li>
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('bantuan') ?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px  <?= (set_active($this->uri->segment(1), 'bantuan', $this->uri->segment(2), array('bantuan', 'kategori_bantuan'))) ?>" href="<?= base_url('bantuan') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen048.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
                                                     <i class="fa-duotone fa-circle-question mt-7 mb-5" style="font-size: 32px;"></i>
@@ -141,13 +149,13 @@
                                             </a>
                                         </li>
                                         <li class="nav-item col-12 col-lg mb-5 mb-lg-0">
-                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px" href="<?= base_url('bantuan/kategori_bantuan') ?>">
+                                            <a class="nav-link btn btn-flex btn-color-gray-400 btn-outline btn-outline-default btn-active-primary d-flex flex-grow-1 flex-column flex-center py-5 h-1250px h-lg-175px  <?= (set_active($this->uri->segment(1), 'setting', $this->uri->segment(2), array())) ?>" href="<?= base_url('setting') ?>">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen048.svg-->
                                                 <span class="svg-icon svg-icon-3x mb-5 mx-0">
-                                                    <i class="fa-duotone fa-circle-question mt-7 mb-5" style="font-size: 32px;"></i>
+                                                    <i class="fa-duotone fa-gear  mt-7 mb-5" style="font-size: 32px;"></i>
                                                 </span>
                                                 <!--end::Svg Icon-->
-                                                <span class="fs-6 fw-bold">Kategori Bantuan</span>
+                                                <span class="fs-6 fw-bold">Pengaturan</span>
                                             </a>
                                         </li>
                                     </ul>

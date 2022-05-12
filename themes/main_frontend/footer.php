@@ -28,6 +28,7 @@
 <!--begin::Javascript-->
 <script>
     var hostUrl = "<?= base_url(); ?>assets/";
+    var BASE_URL = "<?= base_url() ?>";
 </script>
 <!--begin::Global Javascript Bundle(used by all pages)-->
 <script src="<?= base_url(); ?>assets/plugins/global/plugins.bundle.js"></script>
@@ -42,6 +43,7 @@
 <script src="<?= base_url(); ?>assets/js/custom/apps/chat/chat.js"></script>
 <script src="<?= base_url(); ?>assets/js/custom/modals/create-campaign.js"></script>
 <script src="<?= base_url(); ?>assets/js/custom/modals/users-search.js"></script>
+
 <!--end::Page Custom Javascript-->
 
 <!-- Daterangepicker -->
@@ -49,6 +51,18 @@
 <script type="text/javascript" src="<?= base_url(); ?>assets/plugins/daterangepicker/js/daterangepicker.js"></script> -->
 
 <!--end::Javascript-->
+<script src="<?= base_url(); ?>assets/js/page/function.js"></script>
+<?php
+
+if (isset($js_add) && is_array($js_add)) {
+    foreach ($js_add as $js) {
+        echo $js;
+    }
+} else {
+    echo (isset($js_add) && ($js_add != "") ? $js_add : "");
+}
+
+?>
 </body>
 <!--end::Body-->
 

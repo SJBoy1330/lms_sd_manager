@@ -50,7 +50,7 @@
                         </div>
                         <!--begin::Heading-->
                         <!--begin::Input group-->
-                        <div class="fv-row mb-10">
+                        <div class="fv-row mb-10" id="req_username">
                             <!--begin::Label-->
                             <label class="form-label fs-6 fw-bolder text-dark">Username</label>
                             <!--end::Label-->
@@ -60,7 +60,7 @@
                         </div>
                         <!--end::Input group-->
                         <!--begin::Input group-->
-                        <div class="fv-row mb-10">
+                        <div class="fv-row mb-10" id="req_password">
                             <!--begin::Wrapper-->
                             <div class="d-flex flex-stack mb-2">
                                 <!--begin::Label-->

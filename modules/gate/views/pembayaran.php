@@ -9,14 +9,15 @@
             </h3>
             <div class="card-toolbar">
                 <a href="#" class="btn btn-sm btn-light-primary" data-bs-toggle="modal" data-bs-target="#modalTahunAjaran">
-                <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
-                <span class="svg-icon svg-icon-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <rect opacity="0.5" x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black" />
-                        <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black" />
-                    </svg>
-                </span>
-                Metode Bayar</a>
+                    <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
+                    <span class="svg-icon svg-icon-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect opacity="0.5" x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black" />
+                            <rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black" />
+                        </svg>
+                    </span>
+                    Metode Bayar
+                </a>
             </div>
         </div>
         <!--end::Header-->
@@ -147,7 +148,7 @@
                         <label class="fs-6 fw-bold form-label mb-2">Nama</label>
                         <!--end::Label-->
                         <div class="position-relative d-flex align-items-center">
-                            <input class="form-control form-control-solid"  placeholder="Masukkan nama" />
+                            <input class="form-control form-control-solid" placeholder="Masukkan nama" />
                         </div>
                     </div>
 
@@ -156,7 +157,7 @@
                         <label class="fs-6 fw-bold form-label mb-2">Biaya</label>
                         <!--end::Label-->
                         <div class="position-relative d-flex align-items-center">
-                            <input type="number" class="form-control form-control-solid"  placeholder="Masukkan biaya" />
+                            <input type="number" class="form-control form-control-solid" placeholder="Masukkan biaya" />
                         </div>
                     </div>
                     <!--end::Input group-->
@@ -166,7 +167,7 @@
                         <label class="fs-6 fw-bold form-label mb-2">Biaya Persen</label>
                         <!--end::Label-->
                         <div class="position-relative d-flex align-items-center">
-                            <input type="number" class="form-control form-control-solid"  placeholder="Masukkan biaya persen" />
+                            <input type="number" class="form-control form-control-solid" placeholder="Masukkan biaya persen" />
                         </div>
                     </div>
 
@@ -175,16 +176,16 @@
                         <label class="fs-6 fw-bold form-label mb-2">No Rekening</label>
                         <!--end::Label-->
                         <div class="position-relative d-flex align-items-center">
-                            <input class="form-control form-control-solid"  placeholder="Masukkan no rekening" />
+                            <input class="form-control form-control-solid" placeholder="Masukkan no rekening" />
                         </div>
                     </div>
-                    
+
                     <div class="fv-row mb-10">
                         <!--begin::Label-->
                         <label class="fs-6 fw-bold form-label mb-2">Cabang</label>
                         <!--end::Label-->
                         <div class="position-relative d-flex align-items-center">
-                            <input class="form-control form-control-solid"  placeholder="Masukkan email" />
+                            <input class="form-control form-control-solid" placeholder="Masukkan email" />
                         </div>
                     </div>
 
@@ -193,7 +194,7 @@
                         <label class="fs-6 fw-bold form-label mb-2">Atas Nama</label>
                         <!--end::Label-->
                         <div class="position-relative d-flex align-items-center">
-                            <input class="form-control form-control-solid"  placeholder="Masukkan telpon" />
+                            <input class="form-control form-control-solid" placeholder="Masukkan telpon" />
                         </div>
                     </div>
 
@@ -236,8 +237,9 @@
                     <div class="row mb-4">
                         <div class="d-flex justify-content-end">
                             <button type="button" class="btn btn-primary">
-                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
-                            <!--end::Svg Icon-->Simpan</button>
+                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
+                                <!--end::Svg Icon-->Simpan
+                            </button>
                             <!--end::Add user-->
                         </div>
                     </div>

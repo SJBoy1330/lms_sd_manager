@@ -3,10 +3,27 @@
 class Controller_ctl extends MY_Admin
 {
 
+	public function __construct()
+	{
+		parent::__construct();
+
+		// LOAD MODEL
+		$this->load->model('sekolah_m');
+	}
+
 
 	public function index()
 	{
+		// TITLE
 		$mydata['title'] = 'ALPHATECH';
+
+
+		// LOAD JS
+		$this->data['js_add'][] = '<script type="text/javascript" src="' . base_url('assets/js/page/sekolah/sekolah.js') . '"></script>';
+		// LOAD DATA
+
+		$mydata['result'] = $this->sekolah_m->get_all();
+		// LOAD VIEWS
 		$this->data['content'] = $this->load->view('index', $mydata, TRUE);
 		$this->display();
 	}
