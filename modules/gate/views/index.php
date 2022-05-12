@@ -267,13 +267,13 @@
                         <!--end::Label-->
                         <div class="d-flex align-items-center">
                             <select name="hari_libur_global[]" id="hari_libur_global" class="form-select form-select-solid" data-allow-clear="true" data-placeholder="Pilih hari libur" multiple="multiple" data-control="select2">
-                                <option value="0">Minggu</option>
-                                <option value="1">Senin</option>
-                                <option value="2">Selasa</option>
-                                <option value="3">Rabu</option>
-                                <option value="4">Kamis</option>
-                                <option value="5">Jumat</option>
-                                <option value="6">Sabtu</option>
+                                <option value="1">Minggu</option>
+                                <option value="2">Senin</option>
+                                <option value="3">Selasa</option>
+                                <option value="4">Rabu</option>
+                                <option value="5">Kamis</option>
+                                <option value="6">Jumat</option>
+                                <option value="7">Sabtu</option>
                             </select>
                         </div>
                     </div>
